@@ -1,27 +1,67 @@
-# pujols-cardinals-analysis
-A simple sports analytics project analyzing Albert Pujols's production decline with the Angels compared to his Cardinals years.
-# Albert Pujols Angels Analysis
+# Albert Pujols: Decline in Production with the Angels
 
-## Question
-How did Albert Pujols’s performance change after leaving the St. Louis Cardinals?
+## 📌 Project Overview
+This project analyzes Albert Pujols’s offensive performance after leaving the St. Louis Cardinals (2001–2011) and signing with the Los Angeles Angels (2012–2021).  
+The goal is to demonstrate how aging, injuries, and role changes can be quantified using modern baseball metrics.
 
-## Data
-- Source: Baseball Reference / FanGraphs
-- Seasons: 2001–2021
+This is a **sports analytics case study** designed to showcase skills in:
+- Data collection and cleaning
+- Exploratory data analysis (EDA) with Python (pandas, matplotlib)
+- Advanced sabermetrics (wRC+, WAR, OPS)
+- Communicating insights with data visualization
 
-## Method
-- Compared batting average, OBP, SLG, and wRC+ between STL (2001–2011) and LAA (2012–2021).
-- Visualized yearly trends.
+---
 
-## Key Findings
-- Cardinals: .328 AVG, 167 wRC+
-- Angels: .256 AVG, 108 wRC+
-- Significant decline due to age, chronic injuries, and loss of bat speed/mobility.
+## ❓ Research Question
+> How did Albert Pujols’s production change after leaving the Cardinals, and what factors contributed to the decline?
 
-## Next Steps
-- Compare Pujols’s decline to other aging first basemen.
-- Add WAR trendlines to visualize overall value.
+---
 
-## Finish Line
-- Finishing strong and entering 700 club
-- Closing out career with Yadi and Waino at his side 
+## 📊 Data Sources
+- [Baseball Reference](https://www.baseball-reference.com/players/p/pujolal01.shtml)  
+- [FanGraphs](https://www.fangraphs.com/players/albert-pujols/1015/stats?position=1B)  
+
+Collected CSVs of yearly batting stats from 2001–2021.
+
+---
+
+## 🔎 Methodology
+1. Split career into two segments:  
+   - **St. Louis Cardinals (2001–2011)**  
+   - **Los Angeles Angels (2012–2021)**  
+
+2. Calculated key metrics:
+   - Weighted Runs Created Plus (wRC+)
+   - Batting Average (AVG)
+   - Wins Above Replacement (WAR)   
+   - On-Base Percentage (OBP)  
+   - Slugging (SLG)  
+   - OPS 
+
+3. Created visualizations to highlight year-over-year changes.  
+
+---
+
+## 📈 Key Findings
+- **Cardinals (2001–2011):** .328 AVG, 167 wRC+ (elite production, 67% above league average).  
+- **Angels (2012–2021):** .256 AVG, 108 wRC+ (slightly above average, significant decline).  
+- The drop correlates with:
+  - **Age curve:** contract started at age 32.  
+  - **Chronic foot/leg injuries:** multiple surgeries limited mobility.  
+  - **Loss of bat speed:** reduced ability to drive pitches.  
+
+---
+
+## 🧠 Takeaways
+- Even Hall of Fame hitters experience sharp regression when athletic decline and injuries compound.  
+- Long-term contracts for players past 30 often carry high risk.  
+- This type of analysis can be extended to other players/contracts to evaluate decision-making in roster construction.
+
+---
+
+## 🚀 Next Steps
+- Build aging curve comparisons for other first basemen (e.g., Cabrera, Thome).  
+- Expand to Wins Above Replacement (WAR) trendlines.  
+- Develop a simple model predicting production decline based on age/injury history.
+- Continue use of wRC+ because of value and impact 
+---
